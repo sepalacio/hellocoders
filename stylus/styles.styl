@@ -1,0 +1,807 @@
+@import "normalize.styl"
+@import "fonts.styl"
+@import "animate.styl"
+@import "nib"
+
+vendor-prefixes = webkit moz o ms official
+//colors
+dark-gray   = #141D22
+dark-gray2  = #484848   
+gray-body   = #202939
+light-red   = #f75151
+ligth-blue  = #008fd5
+ligth-blue2 = #2187e7
+ligth-gray  = #73848e
+ligth-gray2 = #0b2b33
+ligth-gray3 = #c0d5e0
+ligth-gray4 = #bbc6ce 
+ligth-gray5 = #FBFBFB  
+smokedwhite = #f9fbfc
+a 
+	text-decoration none
+body	
+	background-image url("../img/ajax-loader.gif")
+	background-position 50% 4%
+	background-repeat no-repeat
+	font-family: 'Roboto', sans-serif
+	font-size 16px
+	margin 0
+li
+	list-style none
+figure
+	margin 0
+p
+	margin 0
+
+.header
+	height 6em
+	margin 0
+	position relative			
+	.image-logo	
+		display inline-block
+		margin 1em		
+		width 140px
+ 	.button-menu
+		position absolute
+		right 3%
+		top 27%
+.menu
+	display none
+	margin 0
+	overflow hidden
+	.list
+		padding 0 1em			
+	.item
+			position relative
+		a
+			border-bottom 1px solid 
+			border-color rgba(ligth-gray4, .6)			
+			color white
+			cursor pointer
+			display block
+			font-family font-family 'Open Sans', Helvetica, Segoe UI, Arial, sans-serif
+			padding .6em 0em
+			text-transform capitalize
+			&:hover
+				color ligth-blue
+				transition 0.3s				
+		.go
+			cursor pointer
+			float right
+			font-size 14px
+			color white
+			position absolute
+			right 1%
+			top 30%
+.wrap	
+	background-attachment scroll
+	background-image url("../img/bk1.jpg")
+	//http://peopleimages.com/image/ID-456845-working-man-laptop-internet-connected
+	background-position center center
+	background-repeat no-repeat
+	background-size cover
+	height 250px
+	text-align center
+	position relative
+	.transparency
+		background rgba(black, .1)		
+		height 250px
+		width 100%
+.language
+	display none		
+.yellowbulb
+	font-size 2em
+	position absolute
+	top 10%
+	left 45%
+	color white
+	animation 3s onBulb ease-out
+	transition 0.2s ease-out	
+	&:hover
+		transition 0.2s ease-out
+		color yellow
+		transform scale(1.2)		
+.word2	
+	width 42px
+	margin-left -8px
+	.char3
+		padding-right 30px
+		margin-right -55px
+.word3
+	margin-left -8px
+	.char1
+		padding-left 35px	
+
+.wrapper
+	margin 0
+	position relative
+	top 30%
+	transform traslateY(-30%)	
+	user-select none	
+	font-family 'Italianno', cursive
+	margin 0
+	color white
+	text-shadow: rgb(8,13,16) 1px 2px 7px;
+	letter-spacing 2px
+.sentence
+	font-size 3em	
+	margin 0	
+.slidingVertical	
+	display block
+	height 60px
+	margin 0 auto
+	width 250px
+	font-size: 3em;
+	.spanword
+		animation topToBottom 12.5s linear infinite 0s		
+		display block
+		margin -0.3em auto
+		opacity 0
+		width 250px
+		text-transform capitalize
+		position absolute
+		&:nth-child(2)
+			animation-delay 2.5s
+		&:nth-child(3)
+			animation-delay 5s			
+		&:nth-child(4)
+			animation-delay 7.5s
+		&:nth-child(5)
+			animation-delay 10s		
+
+.tittles-h3
+	color ligth-gray2
+	font-size 2rem
+	font-weight 300
+	letter-spacing 1px
+	margin 0 .5em 1em .5em 
+	text-align center
+	visibility visible
+.services
+	text-align center				
+	.title
+		color ligth-blue	
+		font-size 1.5em
+		font-weight 300
+		letter-spacing 2px
+		margin .5em .5em .2em .5em
+		text-transform capitalize		
+	.description
+		color ligth-gray
+		font-size 1.2em
+		font-weight 300
+		letter-spacing 1px
+		margin 0 .5em 2em .5em	
+.img-strategy
+	.image
+		width 128px
+		height 128px
+.success
+		background ligth-gray
+		border-radius 10px
+		color white
+		font-size 1.5rem
+		font-weight 300
+		letter-spacing 2px
+		margin 0 1em
+		padding .6em
+		visibility visible
+		//	para hacer botones trend
+		// border none
+		// box-shadow 0 3px 0 0 dark-gray
+		// margin-top 21px
+.our-team
+	text-align center
+	.avatar
+		border-radius 50%
+		box-shadow:2px 2px 5px 0px #B3B3B3
+		height 120px
+		margin .5em auto
+		overflow hidden
+		padding .5em	
+		width 120px
+	.imga
+		border-radius 50%	
+	.codername
+		color dark-gray		
+		font-size 1.6em
+		font-weight 500
+		margin .5em .5em 0em .5em
+	.coderskill	
+		color dark-gray2
+		font-size 1.3em
+		margin 0
+	.member
+		color ligth-gray
+		font-size 1.2rem
+		font-weight 300
+		letter-spacing 1px	
+		margin .5em 1em
+	.mar-top
+		margin-top 4em
+.wrapskill
+	padding .2em 0
+	color white
+	border-radius 10px		
+	margin 1.5em auto
+	width 90%
+	box-shadow:2px 2px 5px 0px #B3B3B3	
+	.member-skills
+		display block
+		font-size 0.8em 
+		margin 0.6em 0
+		position relative
+		.name
+			display inline-block
+			float left
+			padding-left 1.5em
+			padding-right
+		.ratio	
+			display inline-block
+			float right		
+			padding-right 1.5em
+		.total
+			display inline-block
+			position relative
+			background #000
+			border-radius 6px
+			border-left 1px solid #111
+			border-top 1px solid #111
+			border-right 1px solid #333
+			border-bottom 1px solid #333		
+			height 3px
+			width 60%
+			margin: 2px auto			
+		.state
+			background ligth-blue2
+			border-radius 6px
+			box-shadow 0px 0px 10px 1px rgba(0,198,255,0.4)		
+			height 3px
+			position relative
+		.total2
+			width 55%			
+.portafolio
+	padding-bottom 1em
+	.project-tittle
+		color smokedwhite			
+		font-size 2.2em
+		line-height 36px
+		margin 0
+		padding-top .5em
+	.project-descript
+		color ligth-gray4
+		font-size 1rem
+		font-weight 300
+		letter-spacing 1px	
+		margin 1em
+		text-align justify
+    	text-justify inter-word
+.project-wrap
+	height 270px
+	margin 2em auto
+	overflow hidden
+	position relative
+	width 300px	
+	transition .2s ease-out
+	.link	
+		background rgba(black, .4)
+		border 3px solid rgba(255,255,255,.4)
+		height 58px
+		left 38%
+		opacity 1
+		position absolute
+		text-align center
+		top 20%
+		width 58px
+		z-index 2	
+		animation .2s linkZoom ease-out
+		&:hover
+			transition transform .2s, opacity .6s, background .3s ease-out
+			background rgba(black, .7)	
+		.button-link
+			position relative
+			top 30%	
+	.img1
+		width 100%
+		height auto
+		transition .2s ease-out
+	.img2
+		width 100%
+		height auto
+		transition .2s ease-out
+	.img3
+		width 100%
+		height auto
+		transition .2s ease-out
+	.img4
+		width 100%
+		height auto
+		transition .2s ease-out							
+	.img-port	
+		transform scale(1.1)	
+		transition .2s ease-out			
+	.triangle 
+		border-bottom 11px solid white	
+		border-left 11px solid transparent
+		border-right 11px solid transparent
+		display inline-block
+		left 10%		
+		position absolute
+		top 57%
+		z-index 1		
+	.actions
+		background white
+		bottom 8px
+		font-size 1.1em		
+		font-weight 200
+		height 97px
+		position absolute
+		width 100%
+		.project-name
+			color ligth-gray
+			font-size 1.3em
+			padding 1.5em 5.5em 1.5em 1em
+			position absolute
+			top 0
+			&:hover
+				color ligth-blue
+		.likes
+			color ligth-gray			
+			position absolute
+			padding .1em
+			right 18%			
+			top 32%
+			&:hover:before
+				color light-red 
+				cursor pointer				
+		.likes-count		
+			color ligth-gray	
+			font-size 0.9em
+			position absolute
+			right 8%			
+			top 36%
+			width 28px
+			border-style none
+			text-align center
+.hireus
+	height 750px
+	padding 1em
+	position relative
+	.hiretittle			
+		color dark-gray
+		font-family 'Italianno', cursive
+		font-size 3.4em
+		height 60px
+		margin .5em 0 .2em 0		
+		text-align center
+	.form
+		background white
+		height 450px	
+		margin 1em auto
+		padding 1em
+		text-align center			
+		width 90%
+		.input
+			background ligth-gray5
+			border 1px solid #D5D5D5
+			color dark-gray2
+			font-size .9em
+			line-height 24px
+			margin 0 auto
+			padding .5em .6em
+			transition 0.3s
+			width 90%
+			&:focus
+				background #E6E6E6	
+				border-color #E6E6E6					
+				outline 0px 
+		.button
+			background white
+			border 2px solid dark-gray
+			border-radius 5px	
+			color dark-gray
+			font-weight 500
+			letter-spacing 1px
+			margin 1em
+			padding 1.2em 3em	
+			text-transform uppercase
+			transition 0.2s ease-out
+			&:hover
+				background dark-gray	
+				color white
+			&:active
+				outline 0px 
+				position relative
+				top 1px	
+.icon
+	color ligth-blue
+	display block
+	position relative
+	top 7%
+	left 86%
+	margin 0
+	width 2em
+	font-size 1.1em
+.icofoot
+	padding-top .1em
+	color ligth-gray4
+	font-size 1.4em	
+	width 2em
+	display inline-block
+	position absolute
+	top 19%
+	margin-right 1em
+.info
+	color ligth-gray4
+	width 70%
+	font-size .8rem
+	font-weight 100
+	letter-spacing 1px	
+	margin 1em 0 
+	display inline-block
+	position relative
+	left 34px
+.textarea
+	 resize none	
+.footer
+	text-align center
+	font-size .8rem
+	padding 4em 0 2em 
+	color ligth-gray4
+	font-weight 100
+	opacity 1
+//Utilitary classes			
+.p-padding
+	padding-right 15px
+.p-padding1
+	padding-right 12px
+.p-padding21
+	padding-right 22px
+.p-padding22
+	padding-right 29px
+.p-padding24
+	padding-right 24px	
+.bgtexture
+	background url("../img/backg.gif") top left repeat
+.padding-top
+	padding-top 1em	
+.memberteam
+	display none
+.infowraper
+	width 250px
+	margin 0	
+	.wrapinfo
+		display block	
+		position relative
+		
+.wrapper2
+	display none
+			
+.html5
+	width 90%
+	animation html5 2s ease-out	
+.css
+	width 90%
+	animation css 2s ease-out
+.jquery
+	width 40%
+	animation jquery 2s ease-out
+.javascript
+	width 50%
+	animation javascript 2s ease-out
+	
+.php
+	width 80%
+	animation php 2s ease-out	
+.laravel
+	width 90%
+	animation laravel 2s ease-out
+.phyton
+	width 60%
+	animation phyton 2s ease-out
+.ruby
+	width 50%
+	animation ruby 2s ease-out	
+.countadd
+	color blue
+.turnaround
+	animation turnaround 0.5s ease-out	
+	color ligth-blue	
+	
+::-webkit-input-placeholder {
+	color ligth-gray
+}
+::-moz-input-placeholder {
+    color ligth-gray
+} 
+:-moz-placeholder { 
+    color ligth-gray
+}
+:-ms-input-placeholder {
+    color ligth-gray
+}
+//_____ANIMATION TEXT
+@keyframes topToBottom
+	0% 
+		opacity 0
+	5%
+		opacity 0
+		transform translateY(-50px)
+	10%
+		opacity 1
+		transform translateY(0px)
+	25%
+		opacity 1
+		transform translateY(0px)
+	30%
+		opacity 0
+		transform translateY(50px)
+	80%
+		opacity 0
+	100%
+		opacity 0	
+//_____________________________________________________	
+//ANIMATION SKILL BAR
+@keyframes html5
+	0%
+		width 0px
+	100%
+		width 90%
+@keyframes css
+	0%
+		width 0px
+	100%
+		width 90%
+@keyframes jquery
+	0%
+		width 0px
+	100%
+		width 40%
+@keyframes javascript
+	0%
+		width 0px
+	100%
+		width 50%
+@keyframes php
+	0%
+		width 0px
+	100%
+		width 80%
+@keyframes laravel
+	0%
+		width 0px
+	100%
+		width 90%
+@keyframes phyton
+	0%
+		width 0px
+	100%
+		width 60%
+@keyframes ruby
+	0%
+		width 0px
+	100%
+		width 50%
+@keyframes onBulb
+	0%
+		transform-origin: 50% 0%
+		opacity 2
+	20%		
+		color yellow
+		opacity 0
+		transform-origin 50% 700%
+		transform scale(0.7)
+@keyframes linkZoom
+	0%
+		opacity 1
+		transform scale(0.5)
+	40%
+		transform scale(0.7)
+	80%		
+		transform scale(0.9)
+	100% 
+		transform scale(1)		
+		
+@keyframes turnaround
+	0%
+		transform rotate(0deg)
+	100%
+		transform rotate(360deg)
+//____________________________________________________
+// Funciona para ancho de pantalla mayor a 480px
+@media screen and (min-width:480px)	
+	body
+		background-position 50% 6%	
+	.wrapper
+		top 28%
+	.wrap
+		height 400px	
+		.transparency
+			height 400px
+	.wrapskill
+		.member-skills			
+			.total		
+				width 67%
+	.sentence
+		font-size 4.5em
+	.slidingVertical
+		font-size 4.5em
+	.word2	
+		width 60px
+	.yellowbulb
+		top 14%
+		left 50%
+	.total2
+		width 80%
+	.icon
+		left 89%	
+// Funciona para ancho de pantalla mayor a 700px		
+@media screen and (min-width:600px)	
+	
+	.wrapskill		
+		width 526px
+	.hireus
+		.form
+			width 480px	
+	.portafolio
+		.project-descript
+			text-align center	
+	.port-wrap		
+		width 100%
+		display flex
+		flex-wrap wrap
+		justify-content space-around		
+	
+// Funciona para ancho de pantalla mayor a 1000px	
+@media screen and (min-width:1000px)	
+	body
+		background-position 50% 10%	
+	.header	
+		.image-logo
+			position absolute
+			left 50%
+			transform translateX(-50%)
+		.button-menu 
+			display none	
+	.menu
+		overflow hidden
+		position absolute
+		top 96px
+		display block
+		text-align center
+		z-index 1
+		width 100%
+		background rgba(black, .4)	
+		.list
+			margin 0
+			padding 0
+			text-transform uppercase
+		.item
+			display inline-block
+			font-size .7rem
+			margin 0 -6px 0 0
+			padding 0 10px 
+			.go
+				right 6%
+				top 32%
+			a
+				border none
+				text-transform uppercase
+				padding 16px
+				&:hover
+					color white
+					text-decoration underline
+					transition 0	
+	.services			
+		.strategy	
+			margin 2em 
+			vertical-align middle
+			display inline-block
+			height 290px
+			width 25%
+	.wrap
+		height 600px	
+		.transparency
+			height 600px
+	.wrapper
+		top 33%
+		display block	
+	.word2	
+		width 85px	
+	.sentence
+		font-size 6em
+	.slidingVertical
+		font-size 6em
+	.success 
+		margin-bottom 1em
+		padding	1em
+	.yellowbulb
+		top 23%
+		font-size 3em	
+	.tittles-h3
+		margin .3em
+	.About-us	
+		text-align center
+		.our-team
+			position relative
+			vertical-align middle
+			display inline-block
+			height 545px
+			width 40%
+			margin 0 1.5em
+			.avatar
+				margin 0 auto
+			.wrapskill		
+				position absolute
+				top 60%
+				left 50%
+				transform translateX(-50%)
+				width 100%	
+	.portafolio
+		margin-top 1em
+		.project-descript
+			text-align center
+		.project-wrap
+			display inline-block		
+			vertical-align middle
+			margin 1em
+			.triangle
+					top 58%
+	
+	.wrap2	
+		background-attachment scroll
+		background-image url("../img/bk16.jpg")
+		//https://creativemarket.com/ZedProMedia/24132-Cappuccino-surrounded-by-technology
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		height 580px
+		text-align center
+		position relative
+		.transparency2
+			background rgba(black, .2)		
+			height 580px
+			width 100%	
+	.hireus
+		height  350px
+		.form
+			box-shadow:0px 0px 30px 1px #50727E
+			position relative
+			bottom 46%
+	.infowraper	
+		position relative
+		top -500px	
+		margin 0 
+	.language
+		display block
+		color ligth-gray4
+		float right	
+		margin .5em 1em
+		font-size .9em
+		cursor pointer
+	.wrapper2
+		color white
+		display block
+		font-family 'Italianno', cursive
+		letter-spacing 2px
+		margin 0 auto
+		position relative
+		text-shadow: rgb(8,13,16) 1px 2px 7px;
+		top 25%
+		user-select none	
+		width 60%
+		.slidingVertical2
+			display block
+			font-size 6em
+			height 60px
+			margin 0 auto
+			opacity initial
+			width 600px
+			.spanword2
+				display block
+				margin -0.3em auto
+				position absolute
+				text-transform capitalize
+				width 600px
+	#notShow
+		display none
